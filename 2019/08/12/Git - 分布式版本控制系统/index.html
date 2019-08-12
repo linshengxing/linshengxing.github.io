@@ -108,21 +108,29 @@
 
 
 
-  <meta name="keywords" content="不要重复造轮子，要用现成的轮子造大炮">
-<meta property="og:type" content="website">
+  <meta name="description" content="配置用户名和Email地址配置用户名：$ git config –global user.name “Your Name”配置Email地址：$ git config –global user.email “email@example.com“查看用户名：$ git config user.name查看Email地址：$ git config user.email 创建版本库创建空仓库：$ mkd">
+<meta name="keywords" content="不要重复造轮子，要用现成的轮子造大炮">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Lins">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/12/Git - 分布式版本控制系统/index.html">
 <meta property="og:site_name" content="Lins">
+<meta property="og:description" content="配置用户名和Email地址配置用户名：$ git config –global user.name “Your Name”配置Email地址：$ git config –global user.email “email@example.com“查看用户名：$ git config user.name查看Email地址：$ git config user.email 创建版本库创建空仓库：$ mkd">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://images-cdn.shimo.im/KTbYhXHXWYsqge0W/image.png!thumbnail">
+<meta property="og:image" content="https://images-cdn.shimo.im/JfEBXR5PPoo20B5H/image.png!thumbnail">
+<meta property="og:image" content="https://images-cdn.shimo.im/eHJjsBq423Y7SOTv/image.png!thumbnail">
+<meta property="og:updated_time" content="2019-08-12T15:42:32.420Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Lins">
+<meta name="twitter:description" content="配置用户名和Email地址配置用户名：$ git config –global user.name “Your Name”配置Email地址：$ git config –global user.email “email@example.com“查看用户名：$ git config user.name查看Email地址：$ git config user.email 创建版本库创建空仓库：$ mkd">
+<meta name="twitter:image" content="https://images-cdn.shimo.im/KTbYhXHXWYsqge0W/image.png!thumbnail">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/12/Git - 分布式版本控制系统/">
 
 
 
@@ -132,7 +140,7 @@
   };
 </script>
 
-  <title>Lins</title>
+  <title> | Lins</title>
   
 
 
@@ -181,8 +189,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -223,7 +230,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
   </li>
@@ -283,9 +290,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -318,10 +325,6 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/12/Git - 分布式版本控制系统/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -402,9 +405,7 @@
       
 
       
-        
-          
-            <h3 id="配置用户名和Email地址"><a href="#配置用户名和Email地址" class="headerlink" title="配置用户名和Email地址"></a>配置用户名和Email地址</h3><p>配置用户名：$ git config –global user.name “Your Name”<br>配置Email地址：$ git config –global user.email “<a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a>“<br>查看用户名：$ git config user.name<br>查看Email地址：$ git config user.email</p>
+        <h3 id="配置用户名和Email地址"><a href="#配置用户名和Email地址" class="headerlink" title="配置用户名和Email地址"></a>配置用户名和Email地址</h3><p>配置用户名：$ git config –global user.name “Your Name”<br>配置Email地址：$ git config –global user.email “<a href="mailto:email@example.com" target="_blank" rel="noopener">email@example.com</a>“<br>查看用户名：$ git config user.name<br>查看Email地址：$ git config user.email</p>
 <h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><p>创建空仓库：$ mkdir learngit<br>改变目录路径：$ cd learngit<br>显示当前目录：$ pwd<br>将该目录变成Git管理的仓库：$ git init<br>仓库创建完，在当前目录下多了一个.git的目录，这个目录是Git用来跟踪管理版本库的<br>Windows系统，为了避免遇到各种莫名其妙的问题，请确保目录名（包括父目录）不包含中文。</p>
 <h3 id="将文件添加到版本库"><a href="#将文件添加到版本库" class="headerlink" title="将文件添加到版本库"></a>将文件添加到版本库</h3><p>版本控制系统，只能跟踪文本文件的改动，图片、视频是二进制文件，版本控制系统无法跟踪文件的变化，只知道图片从100KB改成120KB，具体改了什么，并不知道。（Word是二进制格式）<br>在仓库learngit目录下编写一个readme.txt文件<br>Git is a version control system.<br>Git is free software.<br>将文件添加到仓库：$ git add readme.txt<br>将文件提交到仓库：$ git commit -m “wrote a readme file”<br>为什么Git添加文件需要add、commit两步？因为commit可以提交多个文件</p>
 <h3 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h3><p>修改readme.txt文件内容<br>Git is a distributed version control system.<br>Git is free software.<br>查看仓库当前状态：$ git status<br>查看修改的内容：$ git diff</p>
@@ -430,8 +431,6 @@
 <h3 id="忽略特殊文件"><a href="#忽略特殊文件" class="headerlink" title="忽略特殊文件"></a>忽略特殊文件</h3><p>有些时候，某些文件放到Git工作目录中，但又不能提交它们，比如保存了数据库密码的配置文件，每次【git status】都会显示未提交文件。<br>忽略特殊文件：在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件，.gitignore文件要放到版本库中。<br>GitHub配置文件：<a href="https://github.com/github/gitignore" target="_blank" rel="noopener">https://g</a><a href="https://github.com/github/gitignore" target="_blank" rel="noopener">ithub.com/github/gitignore</a><br>强制添加被忽略文件到Git：$ git add -f <filename><br>查看忽略规则：$ git check-ignore -v <filename></filename></filename></p>
 <h3 id="配置别名"><a href="#配置别名" class="headerlink" title="配置别名"></a>配置别名</h3><p>【git status】：$ git config –global alias.st status<br>【git checkout】：$ git config –global alias.co checkout<br>【git commit】：$ git config –global alias.ci commit<br>【git branch】：$ git config –global alias.br branch<br>–global参数是全局参数，也就是这些命令在这台电脑的所有Git仓库下都有用，如果不设置，就只对当前的仓库起作用。<br>将暂存区的修改撤销掉，放回工作区：$ git config –global alias.unstage ‘reset Head’<br>则：$ git unstage filename  == $ git reset HEAD filename<br>显示最近一次的提交：$ git config –global alias.last ‘log -1’<br>显示提交的信息：$ git config –global alias.lg “log –color –graph –pretty=format:’%Cred%Creset -%C(yellow)%d%Creset %S %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset’ –abbrev-commit”<br>Git的全局配置文件放在用户目录下的.gitconfig文件中，仓库的配置文件放在.git/config文件中</p>
 
-          
-        
       
     </div>
 
@@ -451,194 +450,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/25/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lins">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar2.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lins">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/25/hello-world/" itemprop="url">
-                  我的博客
-                </a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2018/10/25/hello-world/" rel="next" title="我的博客">
+                <i class="fa fa-chevron-left"></i> 我的博客
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-25 21:19:33" itemprop="dateCreated datePublished" datetime="2018-10-25T21:19:33+08:00">2018-10-25</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-10-27 20:16:01" itemprop="dateModified" datetime="2018-10-27T20:16:01+08:00">2018-10-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/25/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/10/25/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/2018/10/25/hello-world/" class="leancloud_visitors" data-flag-title="我的博客">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">热度：</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-                 <span>℃</span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -648,14 +481,18 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -676,8 +513,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -748,6 +594,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置用户名和Email地址"><span class="nav-number">1.</span> <span class="nav-text">配置用户名和Email地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建版本库"><span class="nav-number">2.</span> <span class="nav-text">创建版本库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将文件添加到版本库"><span class="nav-number">3.</span> <span class="nav-text">将文件添加到版本库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改文件"><span class="nav-number">4.</span> <span class="nav-text">修改文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#版本回退"><span class="nav-number">5.</span> <span class="nav-text">版本回退</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作区和暂存区"><span class="nav-number">6.</span> <span class="nav-text">工作区和暂存区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理修改"><span class="nav-number">7.</span> <span class="nav-text">管理修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#撤销修改"><span class="nav-number">8.</span> <span class="nav-text">撤销修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除文件"><span class="nav-number">9.</span> <span class="nav-text">删除文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程仓库"><span class="nav-number">10.</span> <span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加远程库"><span class="nav-number">11.</span> <span class="nav-text">添加远程库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建与合并分支"><span class="nav-number">12.</span> <span class="nav-text">创建与合并分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冲突解决"><span class="nav-number">13.</span> <span class="nav-text">冲突解决</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分支管理策略"><span class="nav-number">14.</span> <span class="nav-text">分支管理策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bug分支"><span class="nav-number">15.</span> <span class="nav-text">Bug分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature分支"><span class="nav-number">16.</span> <span class="nav-text">Feature分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多人写作"><span class="nav-number">17.</span> <span class="nav-text">多人写作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rebase"><span class="nav-number">18.</span> <span class="nav-text">Rebase</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标签管理"><span class="nav-number">19.</span> <span class="nav-text">标签管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建标签"><span class="nav-number">20.</span> <span class="nav-text">创建标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作标签"><span class="nav-number">21.</span> <span class="nav-text">操作标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub和码云"><span class="nav-number">22.</span> <span class="nav-text">GitHub和码云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义Git"><span class="nav-number">23.</span> <span class="nav-text">自定义Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#忽略特殊文件"><span class="nav-number">24.</span> <span class="nav-text">忽略特殊文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置别名"><span class="nav-number">25.</span> <span class="nav-text">配置别名</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -888,6 +750,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.2"></script>
+
+
 
   
 
