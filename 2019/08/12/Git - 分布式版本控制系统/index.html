@@ -116,14 +116,14 @@
 <meta property="og:site_name" content="Lins">
 <meta property="og:description" content="配置用户名和Email地址配置用户名：$ git config –global user.name “Your Name”配置Email地址：$ git config –global user.email “email@example.com“查看用户名：$ git config user.name查看Email地址：$ git config user.email 创建版本库创建空仓库：$ mkd">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/Users/linshengxing/Blog/source/img/2019/08/12/2019081201.jpg">
-<meta property="og:image" content="http://yoursite.com/Users/linshengxing/Blog/source/img/2019/08/12/2019081202.jpg">
-<meta property="og:image" content="http://yoursite.com/Users/linshengxing/Blog/source/img/2019/08/12/2019081203.jpg">
-<meta property="og:updated_time" content="2019-08-17T14:38:33.265Z">
+<meta property="og:image" content="http://yoursite.com/img/2019/08/12/2019081201.jpg">
+<meta property="og:image" content="http://yoursite.com/img/2019/08/12/2019081202.jpg">
+<meta property="og:image" content="http://yoursite.com/img/2019/08/12/2019081203.jpg">
+<meta property="og:updated_time" content="2019-08-18T13:19:05.654Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git-分布式版本控制系统">
 <meta name="twitter:description" content="配置用户名和Email地址配置用户名：$ git config –global user.name “Your Name”配置Email地址：$ git config –global user.email “email@example.com“查看用户名：$ git config user.name查看Email地址：$ git config user.email 创建版本库创建空仓库：$ mkd">
-<meta name="twitter:image" content="http://yoursite.com/Users/linshengxing/Blog/source/img/2019/08/12/2019081201.jpg">
+<meta name="twitter:image" content="http://yoursite.com/img/2019/08/12/2019081201.jpg">
 
 
 
@@ -366,7 +366,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-17 22:38:33" itemprop="dateModified" datetime="2019-08-17T22:38:33+08:00">2019-08-17</time>
+                <time title="修改时间：2019-08-18 21:19:05" itemprop="dateModified" datetime="2019-08-18T21:19:05+08:00">2019-08-18</time>
               
             
           </span>
@@ -426,7 +426,7 @@
 <h3 id="将文件添加到版本库"><a href="#将文件添加到版本库" class="headerlink" title="将文件添加到版本库"></a>将文件添加到版本库</h3><p>版本控制系统，只能跟踪文本文件的改动，图片、视频是二进制文件，版本控制系统无法跟踪文件的变化，只知道图片从100KB改成120KB，具体改了什么，并不知道。（Word是二进制格式）<br>在仓库learngit目录下编写一个readme.txt文件<br>Git is a version control system.<br>Git is free software.<br>将文件添加到仓库：$ git add readme.txt<br>将文件提交到仓库：$ git commit -m “wrote a readme file”<br>为什么Git添加文件需要add、commit两步？因为commit可以提交多个文件</p>
 <h3 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h3><p>修改readme.txt文件内容<br>Git is a distributed version control system.<br>Git is free software.<br>查看仓库当前状态：$ git status<br>查看修改的内容：$ git diff</p>
 <h3 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h3><p>查看提交历史：$ git log<br>查看提交历史（简短）：$ git log –pretty=oneline<br>回退到上一个版本：$ git reset –hard HEAD^<br>回退到指定版本：$ git reset –hard commit_id<br>查看命令历史：$ git reflog<br>commit_id（版本号），是一个SHA1计算出来的非常大的数字，用十六进制表示。</p>
-<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><p>工作区（Working Directory），就是你在电脑里面能看到的目录。<br>工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库（Repository）。<br>Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。<br><img src="/Users/linshengxing/Blog/source/img/2019/08/12/2019081201.jpg" alt="图片"><br>【git add】把文件添加到仓库，实际上就是把文件修改添加到暂存区。<img src="/Users/linshengxing/Blog/source/img/2019/08/12/2019081202.jpg" alt="图片"><br>【git commit】把文件提交到仓库，实际上就是把暂存区的所有内容提交到当前分支。<br><img src="/Users/linshengxing/Blog/source/img/2019/08/12/2019081203.jpg" alt="图片"></p>
+<h3 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h3><p>工作区（Working Directory），就是你在电脑里面能看到的目录。<br>工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库（Repository）。<br>Git的版本库里存了很多东西，其中最重要的就是称为stage（或者叫index）的暂存区，还有Git为我们自动创建的第一个分支master，以及指向master的一个指针叫HEAD。<br><img src="/img/2019/08/12/2019081201.jpg" alt="图片"><br>【git add】把文件添加到仓库，实际上就是把文件修改添加到暂存区。<img src="/img/2019/08/12/2019081202.jpg" alt="图片"><br>【git commit】把文件提交到仓库，实际上就是把暂存区的所有内容提交到当前分支。<br><img src="/img/2019/08/12/2019081203.jpg" alt="图片"></p>
 <h3 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h3><p>Git跟踪并管理的是修改，而非文件。每次修改，如果不用【git add】添加到暂存区，那就不会加入到【git commit】中。<br>查看工作区和版本库里面最新版本的区别：$ git diff HEAD – readme.txt</p>
 <h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>撤销工作区的修改：$ git checkout – readme.txt<br>撤销修改分两种情况：<br>一种是readme.txt自修改后还没有被放到暂存区，撤销修改回到和版本库一模一样的状态。<br>一种是readme.txt已经添加到暂存区，又作了修改，撤销修改回到添加到暂存区后的状态。<br>将暂存区的修改撤销掉（unstage），放回工作区：$ git reset HEAD readme.txt</p>
 <h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><p>删除工作区的文件：$ rm test.txt<br>删除版本库的文件：$ git rm test.txt  删除后需提交：$ git commit -m “remove test.txt”<br>还原版本库的文件到工作区：$ git checkout – test.txt</p>
